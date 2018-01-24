@@ -23,6 +23,7 @@ paths.minCss = paths.webroot + "css/**/*.min.css";
 paths.concatJsDest = paths.webroot + "js/site.min.js";
 paths.concatCssDest = paths.webroot + "css/site.min.css";
 paths.less = paths.webroot + "less/**/*.less";
+paths.concatLessDest = paths.webroot + "less/*.css";
 
 gulp.task("clean:js", function (cb) {
     rimraf(paths.concatJsDest, cb);
@@ -30,6 +31,10 @@ gulp.task("clean:js", function (cb) {
 
 gulp.task("clean:css", function (cb) {
     rimraf(paths.concatCssDest, cb);
+});
+
+gulp.task("clean:less", function (cb) {
+    rimraf(paths.concatLessDest, cb);
 });
 
 gulp.task("clean", ["clean:js", "clean:css"]);
@@ -56,5 +61,5 @@ gulp.task('less', function () {
         .pipe(less({
             paths: [path.join(__dirname, 'less', 'includes')]
         }))
-        .pipe(gulp.dest('./wwwroot/css/'));
+        .pipe(gulp.dest('./wwwroot/less/'));
 });
