@@ -1,5 +1,87 @@
-@test: #F00;
+@import 'grid.less';
+@import 'helpers.less';
+@import 'typography.less';
 
-p {
-    color: @test
+// grid 
+@columns: 12;
+@column-width: 65;
+@gutter-width: 30;
+@total-width: 100%;
+
+.about-run .single-col {
+    .column(12);
+    @media @tablet {
+        .column(3);
+    }
+}
+
+.advantages .single-col {
+    .column(12);
+    @media @tablet {
+        .column(4);
+    }
+}
+
+.statistics .single-col {
+    .column(12);
+    @media @phone {
+        .column(6);
+    }
+    @media @tablet {
+        .column(3);
+    }
+}
+
+.footer-main .single-col {
+    .column(12);
+    @media @phone {
+        .column(6);
+    }
+    @media @tablet {
+        .column(3);
+    }
+}
+
+
+// container
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    clear: both;
+    padding: 0 15px;
+}
+
+// other elements
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+// właściwość która pozwala wykluczać z obliczeń rozmiarów elemntów -> marginesy nie wpływają na wysokość ani szerokość elementów
+* {
+    box-sizing: border-box;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    .center-text;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+// buttons
+.basic-button(@color; @background-color) {
+    color: @color;
+    background-color: @background-color;
+    text-decoration: none;
+    .inline-block;
+    font-size: @basic-font-size;
+    font-weight: 400;
+    line-height: @basic-line-height;
 }

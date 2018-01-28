@@ -1,0 +1,27 @@
+body {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  color: #888;
+}
+p {
+  margin: 0 0 15px;
+  line-height: 24px;
+}
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 12px;
+  color: #888;
+  font-weight: 400;
+}
+h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 18px;
+  color: #888;
+  font-weight: 400;
+}
