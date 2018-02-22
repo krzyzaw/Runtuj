@@ -144,7 +144,7 @@ a img {
   float: left;
   text-align: initial;
 }
-.center-vartical {
+.center-vertical {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -165,7 +165,7 @@ a img {
   width: 100%;
   height: 100%;
 }
-.list-styl-no {
+.list-style-none {
   list-style-type: none;
 }
 .overflow-fix {
@@ -330,4 +330,268 @@ a {
 .section-title {
   margin-bottom: 40px;
   text-align: center;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+/*** Header ***/
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+  border-bottom: 1px solid #DDD;
+  box-shadow: 0 0 1px #DDD;
+}
+header .navbar {
+  height: 70px;
+}
+header .navbar .nav-logo {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+#main-menu {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  #main-menu {
+    display: block;
+  }
+}
+.main-menu-content {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-menu-content ul {
+  list-style-type: none;
+}
+.main-menu-content ul li {
+  float: left;
+  display: block;
+}
+.main-menu-content ul li a {
+  color: #3A3C43;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding: 20px 14px;
+  line-height: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.main-menu-content ul li a:hover {
+  color: #45B6AF;
+}
+@media only screen and (min-width: 992px) {
+  .main-menu-content ul li a {
+    padding: 20px 22px;
+  }
+}
+.main-menu-content ul li i {
+  font-size: 14px;
+}
+.slicknav_menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+@media only screen and (min-width: 768px) {
+  .slicknav_menu {
+    display: none;
+  }
+}
+.slicknav_menu i {
+  display: none;
+}
+.slicknav_menu ul {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #DDD;
+  box-shadow: 0 0 1px #DDD;
+}
+/*!
+ * SlickNav Responsive Mobile Menu v1.0.10
+ * (c) 2016 Josh Cope
+ * licensed under MIT
+ */
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: right;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer;
+}
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 0.25em;
+}
+.slicknav_menu {
+  *zoom: 1;
+}
+.slicknav_menu .slicknav_menutxt {
+  display: block;
+  line-height: 1.188em;
+  float: left;
+}
+.slicknav_menu .slicknav_icon {
+  float: left;
+  width: 1.125em;
+  height: 0.875em;
+  margin: 0.188em 0 0 0.438em;
+}
+.slicknav_menu .slicknav_icon:before {
+  background: transparent;
+  width: 1.125em;
+  height: 0.875em;
+  display: block;
+  content: "";
+  position: absolute;
+}
+.slicknav_menu .slicknav_no-text {
+  margin: 0;
+}
+.slicknav_menu .slicknav_icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  width: 1.125em;
+  height: 0.125em;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+}
+.slicknav_menu:before {
+  content: " ";
+  display: table;
+}
+.slicknav_menu:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.slicknav_nav {
+  clear: both;
+}
+.slicknav_nav ul {
+  display: block;
+}
+.slicknav_nav li {
+  display: block;
+}
+.slicknav_nav .slicknav_arrow {
+  font-size: 0.8em;
+  margin: 0 0 0 0.4em;
+}
+.slicknav_nav .slicknav_item {
+  cursor: pointer;
+}
+.slicknav_nav .slicknav_item a {
+  display: inline;
+}
+.slicknav_nav .slicknav_row {
+  display: block;
+}
+.slicknav_nav a {
+  display: block;
+}
+.slicknav_nav .slicknav_parent-link a {
+  display: inline;
+}
+.slicknav_brand {
+  float: left;
+}
+.slicknav_menu {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #FFF;
+}
+.slicknav_menu * {
+  box-sizing: border-box;
+}
+.slicknav_menu .slicknav_menutxt {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 3px #000;
+}
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #888;
+}
+.slicknav_btn {
+  margin: 8px 15px 8px;
+  padding: 9px 10px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px #DDD;
+  background-color: #FFF;
+}
+.slicknav_btn:hover {
+  background-color: #DDD;
+}
+.slicknav_btn:focus {
+  background-color: #DDD;
+}
+.slicknav_nav {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden;
+}
+.slicknav_nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding-left: 15px;
+  margin: 0 0 0 20px;
+}
+.slicknav_nav .slicknav_row {
+  padding: 5px 10px;
+  margin: 2px 5px;
+}
+.slicknav_nav .slicknav_row:hover {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background: #ccc;
+  color: #fff;
+}
+.slicknav_nav a {
+  font-size: 13px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  color: #888;
+  transition: all 0.2s ease-in-out;
+}
+.slicknav_nav a:hover {
+  color: #45B6AF;
+}
+.slicknav_nav .slicknav_txtnode {
+  margin-left: 15px;
+}
+.slicknav_nav .slicknav_item a {
+  padding: 0;
+  margin: 0;
+}
+.slicknav_nav .slicknav_parent-link a {
+  padding: 0;
+  margin: 0;
+}
+.slicknav_brand {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 7px 12px;
+  height: 44px;
 }

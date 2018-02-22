@@ -35,7 +35,7 @@ body:after {
   float: left;
   text-align: initial;
 }
-.center-vartical {
+.center-vertical {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -56,7 +56,7 @@ body:after {
   width: 100%;
   height: 100%;
 }
-.list-styl-no {
+.list-style-none {
   list-style-type: none;
 }
 .overflow-fix {
@@ -85,6 +85,33 @@ body:after {
   width: 100%;
   height: 100%;
   background: none repeat 0 0 rgba(30, 30, 30, 0.5);
+}
+body {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  color: #888;
+}
+p {
+  margin: 0 0 15px;
+  line-height: 24px;
+}
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 12px;
+  color: #888;
+  font-weight: 400;
+}
+h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 18px;
+  color: #888;
+  font-weight: 400;
 }
 .about-run .single-col {
   display: inline;
@@ -177,4 +204,90 @@ a {
 .section-title {
   margin-bottom: 40px;
   text-align: center;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+/*** Header ***/
+header {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+  border-bottom: 1px solid #DDD;
+  box-shadow: 0 0 1px #DDD;
+}
+header .navbar {
+  height: 70px;
+}
+header .navbar .nav-logo {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+#main-menu {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  #main-menu {
+    display: block;
+  }
+}
+.main-menu-content {
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-menu-content ul {
+  list-style-type: none;
+}
+.main-menu-content ul li {
+  float: left;
+  display: block;
+}
+.main-menu-content ul li a {
+  color: #3A3C43;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  padding: 20px 14px;
+  line-height: 20px;
+  transition: all 0.2s ease-in-out;
+}
+.main-menu-content ul li a:hover {
+  color: #45B6AF;
+}
+@media only screen and (min-width: 992px) {
+  .main-menu-content ul li a {
+    padding: 20px 22px;
+  }
+}
+.main-menu-content ul li i {
+  font-size: 14px;
+}
+.slicknav_menu {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+@media only screen and (min-width: 768px) {
+  .slicknav_menu {
+    display: none;
+  }
+}
+.slicknav_menu i {
+  display: none;
+}
+.slicknav_menu ul {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #DDD;
+  box-shadow: 0 0 1px #DDD;
 }
